@@ -12,9 +12,9 @@ module.exports = {
         contentBase: './public'
     },
     resolve: {
-        extensios: ['', '.js', '.jsx'],
+        extensions: ['', '.js', '.jsx'],
         alias: {
-            modules: __dirname + 'node_modules'
+            modules: __dirname + '/node_modules'
         }
     },
     plugins: [
@@ -35,7 +35,6 @@ module.exports = {
         }, {
             test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
             loader: 'file'
-        }
-    ]
+        }]
     }
 }
